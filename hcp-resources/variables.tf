@@ -5,7 +5,7 @@ variable "hvn_id" {
 }
 
 variable "hcp_cluster_id" {
-  description = "The ID of the HCP Vault/Consul cluster for test."
+  description = "The ID of the HCP Vault/Consul cluster."
   type        = string
 }
 

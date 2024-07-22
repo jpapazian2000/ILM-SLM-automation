@@ -4,7 +4,7 @@ resource "tfe_workspace" "boundary_config" {
   queue_all_runs = false
   vcs_repo {
     branch = "main"
-    identifier = "hashicorp/ILM-SLM-automation"
+    identifier = "jpapazian2000/ILM-SLM-automation"
     github_app_installation_id = data.tfe_github_app_installation.gha_installation.id
   }
   working_directory = "/boundary-config"

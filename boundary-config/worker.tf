@@ -46,8 +46,8 @@ resource "aws_instance" "worker" {
   vpc_security_group_ids        = [data.terraform_remote_state.aws_ec2.outputs.security_group]
   associate_public_ip_address   = true
   tags = {
-    #Name = "${var.tag}-${random_pet.test.id}-worker-${count.index}"
-    Name = "${var.tag}-worker-${count.index}"
+    Name = "${var.tag}-${random_pet.test.id}-worker-${count.index}"
+    #Name = "${var.tag}-worker-${count.index}"
   }
   connection {
     type         = "ssh"

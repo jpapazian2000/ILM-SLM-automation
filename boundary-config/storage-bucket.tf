@@ -14,6 +14,6 @@ resource "boundary_storage_bucket" "aws_s3" {
     "access_key_id"     = var.aws_key_id,
     "secret_access_key" = var.aws_secret_key
   })
-  worker_filter = "name matches \"${var.tag}-worker-0\""
+  worker_filter = "name matches \"${var.worker_name}-0\""
   depends_on = [ aws_instance.worker ]
 }
